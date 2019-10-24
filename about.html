@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/nysl_3.css">
+        <title>About NYSL</title>    
+    </head>
+    
+    <body>
+        <div class="header">
+                <h1>Northside Youth Soccer League</h1>
+                <img src="images/nysl_logo.png" alt="Company Logo">
+                <div class="aboutnysl">
+                <h2>About NYSL</h2>
+                </div>
+        </div>
+             
+        <div id="mySidenav" class="sidenav">
+                <a href="index.html" id="home">Home</a>
+                <a href="#" id="about">About</a>
+                <a href="contact.html" id="contact">Contact</a>
+                <a href="game_info.html" id="game_info">Info</a>
+                <a href="rules.html" id="rules">Rules</a>
+                <a href="registration_form.html" id="register">Register</a>
+        </div>
+       
+    <main class="content">
+        <div class="textbars">     
+            <button class="accordion">Mission</button>
+            <div class="panel">
+            <p>To support young athletes living in Chicago's northside neighborhoods, who have an interest in learning and playing soccer, with opportunities to learn and practice skill related to the game of soccer, especially those skills related to the team cooperation and good sportsmanship.</p>
+            </div>
+
+            <button class="accordion">Vision</button>
+            <div class="panel">
+                <p>The Northside Youth Soccer League aspires to develop strong, well-rounded, and mindful athletes through the building of character,self-discipline, and leadership.</p>
+            </div>
+
+            <button class="accordion">General Info</button>
+            <div class="panel">
+            <p>The Northside Youth Soccer League was established in 1996 to provide athletes residing in Chicago's northside neighborhood an environment to learn and play soccer. To be a member of NYSL,you must be between ages of 4-12 and reside in a Chicago northside neighborhood. NYSL is run by a small, full-time staff, and relies on the generous volunteer time of parents and former league members.</p>
+            </div>
+        </div>
+        
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+            });
+            }
+        </script>
+    </main>
+    </body>
+</html>

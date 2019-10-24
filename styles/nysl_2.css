@@ -1,0 +1,15 @@
+.content_part{
+  width:70%;
+  margin:auto;
+  background-color:rgba(255, 255, 255, 0.699);
+}
+.content_part h1,.content_part h2,.content_part h3{
+  text-align:center;
+}
+.therules h4{
+  margin:0;
+  margin-top:5px;
+}
+.therules ul,.therules ol{
+  margin-top:0;
+}
